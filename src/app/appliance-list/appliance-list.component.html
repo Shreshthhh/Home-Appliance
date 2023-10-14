@@ -1,0 +1,29 @@
+<h2>Appliances</h2>
+
+<div>
+    <table class="table table-stripped">
+        <thead>
+            <th>Appliance Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Created On</th>
+            <th>Actions</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let appliance of appliances">
+                <td>{{appliance.applianceId}}</td>
+                <td>{{appliance.name}}</td>
+                <td>{{appliance.description}}</td>
+                <td>{{appliance.createdOn}}</td>
+                <td>
+                     <button (click)="updateAppliance(appliance.applianceId)" class="btn btn-info">Update</button>
+                </td>
+                <td>
+                    <button (click)="deleteAppliance(appliance.applianceId)" class="btn btn-danger">Delete</button>
+               </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+

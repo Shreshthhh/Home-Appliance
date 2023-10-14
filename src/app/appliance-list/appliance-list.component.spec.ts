@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { ApplianceListComponent } from './appliance-list.component';
+
+describe('ApplianceListComponent', () => {
+  let component: ApplianceListComponent;
+  let fixture: ComponentFixture<ApplianceListComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ ApplianceListComponent ]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(ApplianceListComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
